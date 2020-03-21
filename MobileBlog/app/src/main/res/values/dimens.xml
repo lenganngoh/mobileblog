@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dimen_default_padding">15dp</dimen>
+    <dimen name="dimen_default_margin">10dp</dimen>
+    <dimen name="dimen_min_height_views">50dp</dimen>
+    <dimen name="dimen_default_et_height">100dp</dimen>
+    <dimen name="dimen_default_fading_edge">10dp</dimen>
+</resources>

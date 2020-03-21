@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Mobile Blog</string>
+    <string name="str_username">Username</string>
+    <string name="str_password">Password</string>
+    <string name="str_login">Log-in</string>
+    <string name="str_signup_msg">No account yet? Sign up here!</string>
+    <string name="str_signup">Sign Up</string>
+    <string name="str_confirm_pass">Confirm Password</string>
+    <string name="str_home">Home</string>
+    <string name="str_home_post_hint">Say something to the world</string>
+    <string name="str_attach_image">Attach Image</string>
+    <string name="str_post">Post</string>
+    <string name="str_latest_posts">Latest Posts</string>
+    <string name="str_welcome">Welcome, %s</string>
+    <string name="str_ok">OK</string>
+    <string name="str_private">Private</string>
+    <string name="str_posting">Posting...</string>
+    <string name="str_posts_by">Posts made by %s</string>
+    <string name="str_title">Title</string>
+</resources>

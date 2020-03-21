@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   android:layout_width="match_parent"
+                                                   android:padding="@dimen/dimen_default_padding"
+                                                   android:layout_height="match_parent">
+
+    <TextView android:id="@+id/lblLogin"
+              app:layout_constraintTop_toTopOf="parent"
+              app:layout_constraintLeft_toLeftOf="parent"
+              app:layout_constraintRight_toRightOf="parent"
+              android:layout_width="match_parent"
+              android:textAllCaps="true"
+              android:layout_height="wrap_content"
+              android:textSize="18sp"
+              android:textColor="@color/colorPrimary"
+              android:text="@string/str_login"/>
+
+    <EditText android:id="@+id/etUser"
+              app:layout_constraintTop_toBottomOf="@id/lblLogin"
+              app:layout_constraintLeft_toLeftOf="parent"
+              app:layout_constraintRight_toRightOf="parent"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:inputType="text"
+              android:hint="@string/str_username"/>
+
+    <EditText android:id="@+id/etPass"
+              app:layout_constraintTop_toBottomOf="@id/etUser"
+              app:layout_constraintLeft_toLeftOf="parent"
+              app:layout_constraintRight_toRightOf="parent"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:inputType="textPassword"
+              android:hint="@string/str_password"/>
+
+    <Button android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/dimen_min_height_views"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:text="@string/str_login"
+            app:layout_constraintTop_toBottomOf="@id/etPass"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView android:id="@+id/txtSignUp"
+              app:layout_constraintTop_toBottomOf="@id/btnLogin"
+              app:layout_constraintLeft_toLeftOf="parent"
+              app:layout_constraintRight_toRightOf="parent"
+              android:layout_marginTop="@dimen/dimen_default_margin"
+              android:gravity="center_horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textStyle="italic"
+              android:textColor="@color/colorAccent"
+              android:textSize="18sp"
+              android:text="@string/str_signup_msg"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

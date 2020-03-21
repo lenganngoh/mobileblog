@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                   android:orientation="vertical"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:layout_margin="8dp"
+                                   app:cardBackgroundColor="@android:color/background_light"
+                                   app:cardElevation="3dp">
+
+    <androidx.appcompat.widget.LinearLayoutCompat android:layout_width="match_parent"
+                                                  android:layout_height="match_parent"
+                                                  android:padding="@dimen/dimen_default_padding"
+                                                  android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView android:id="@+id/txtName"
+                                                     app:autoSizeMaxTextSize="30sp"
+                                                     app:autoSizeMinTextSize="12sp"
+                                                     app:autoSizeStepGranularity="0.5sp"
+                                                     app:autoSizeTextType="uniform"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="wrap_content"
+                                                     android:textSize="22sp"
+                                                     android:textStyle="bold"
+                                                     android:textColor="@color/colorPrimaryDark"/>
+
+        <androidx.appcompat.widget.AppCompatTextView android:id="@+id/txtTitle"
+                                                     app:autoSizeMaxTextSize="30sp"
+                                                     app:autoSizeMinTextSize="12sp"
+                                                     app:autoSizeStepGranularity="0.5sp"
+                                                     app:autoSizeTextType="uniform"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="wrap_content"
+                                                     android:textSize="20sp"
+                                                     android:textStyle="normal"
+                                                     android:textColor="@color/colorPrimaryDark"/>
+
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/imgAttachment"
+                                                      android:layout_width="match_parent"
+                                                      android:layout_height="wrap_content"
+                                                      android:scaleType="fitXY"
+                                                      android:adjustViewBounds="true"/>
+
+        <androidx.appcompat.widget.AppCompatTextView android:id="@+id/txtMessage"
+                                                     app:autoSizeMaxTextSize="30sp"
+                                                     app:autoSizeMinTextSize="12sp"
+                                                     app:autoSizeStepGranularity="0.5sp"
+                                                     app:autoSizeTextType="uniform"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="wrap_content"
+                                                     android:textSize="18sp"
+                                                     android:textColor="@color/colorAccent"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.cardview.widget.CardView>

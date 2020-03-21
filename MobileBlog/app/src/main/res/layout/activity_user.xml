@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_marginTop="@dimen/dimen_default_margin"
+                                                   android:layout_marginStart="@dimen/dimen_default_margin"
+                                                   android:layout_marginEnd="@dimen/dimen_default_margin"
+                                                   android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatTextView android:id="@+id/lblTitle"
+                                                 app:layout_constraintTop_toTopOf="parent"
+                                                 app:layout_constraintLeft_toLeftOf="parent"
+                                                 app:layout_constraintRight_toRightOf="parent"
+                                                 app:autoSizeMaxTextSize="30sp"
+                                                 app:autoSizeMinTextSize="12sp"
+                                                 app:autoSizeStepGranularity="0.5sp"
+                                                 app:autoSizeTextType="uniform"
+                                                 android:layout_width="match_parent"
+                                                 android:textAllCaps="true"
+                                                 android:layout_height="wrap_content"
+                                                 android:textSize="22sp"
+                                                 android:textStyle="bold"
+                                                 android:textColor="@color/colorPrimary"
+                                                 android:focusable="true"
+                                                 android:focusableInTouchMode="true"/>
+
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvPosts"
+                                               app:layout_constrainedHeight="true"
+                                               app:layout_constraintBottom_toBottomOf="parent"
+                                               app:layout_constraintEnd_toEndOf="parent"
+                                               app:layout_constraintHeight_default="spread"
+                                               app:layout_constraintStart_toStartOf="parent"
+                                               app:layout_constraintTop_toBottomOf="@id/lblTitle"
+                                               app:layout_constraintWidth_default="wrap"
+                                               android:requiresFadingEdge="vertical|horizontal"
+                                               android:fadingEdgeLength="@dimen/dimen_default_fading_edge"
+                                               android:layout_width="match_parent"
+                                               android:layout_height="0dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
